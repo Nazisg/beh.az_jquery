@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>task</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h6 id="current-time"></h6>
+        <div class="status-bar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="12"
+            viewBox="0 0 18 12"
+            fill="red"
+          >
+            <path
+              d="M9.61538 2.88462C9.61538 2.35357 10.0459 1.92308 10.5769 1.92308H11.5385C12.0695 1.92308 12.5 2.35357 12.5 2.88462V10.5769C12.5 11.108 12.0695 11.5385 11.5385 11.5385H10.5769C10.0459 11.5385 9.61538 11.108 9.61538 10.5769V2.88462Z"
+              fill="black"
+            />
+            <path
+              d="M14.4231 0.961538C14.4231 0.430495 14.8536 0 15.3846 0H16.3462C16.8772 0 17.3077 0.430495 17.3077 0.961538V10.5769C17.3077 11.108 16.8772 11.5385 16.3462 11.5385H15.3846C14.8536 11.5385 14.4231 11.108 14.4231 10.5769V0.961538Z"
+              fill="black"
+            />
+            <path
+              d="M4.80769 6.25C4.80769 5.71896 5.23819 5.28846 5.76923 5.28846H6.73077C7.26181 5.28846 7.69231 5.71896 7.69231 6.25V10.5769C7.69231 11.108 7.26181 11.5385 6.73077 11.5385H5.76923C5.23819 11.5385 4.80769 11.108 4.80769 10.5769V6.25Z"
+              fill="black"
+            />
+            <path
+              d="M0 8.65385C0 8.1228 0.430495 7.69231 0.961538 7.69231H1.92308C2.45412 7.69231 2.88462 8.1228 2.88462 8.65385V10.5769C2.88462 11.108 2.45412 11.5385 1.92308 11.5385H0.961538C0.430495 11.5385 0 11.108 0 10.5769V8.65385Z"
+              fill="black"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="12"
+            viewBox="0 0 17 12"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.17352 2.48801C10.5452 2.48811 12.8262 3.41832 14.5451 5.08636C14.6745 5.21514 14.8814 5.21352 15.0089 5.08272L16.2461 3.80813C16.3107 3.74179 16.3467 3.65192 16.3461 3.55843C16.3456 3.46493 16.3086 3.3755 16.2433 3.30994C11.7318 -1.10331 4.6145 -1.10331 0.103041 3.30994C0.0376897 3.37546 0.000610076 3.46485 7.46089e-06 3.55835C-0.000595154 3.65185 0.035329 3.74174 0.0998304 3.80813L1.33746 5.08272C1.46486 5.21372 1.67191 5.21534 1.80126 5.08636C3.52034 3.41821 5.8016 2.488 8.17352 2.48801ZM8.20761 6.33594C9.5107 6.33586 10.7673 6.83026 11.7332 7.72307C11.8638 7.84978 12.0696 7.84703 12.197 7.71688L13.4329 6.44228C13.4979 6.37542 13.534 6.28473 13.5331 6.19048C13.5322 6.09623 13.4943 6.00631 13.4279 5.94081C10.4864 3.14794 5.93127 3.14794 2.98985 5.94081C2.92341 6.00631 2.8855 6.09628 2.88463 6.19055C2.88376 6.28483 2.92 6.37552 2.98522 6.44228L4.22071 7.71688C4.34806 7.84703 4.55386 7.84978 4.68451 7.72307C5.64979 6.83085 6.90538 6.33649 8.20761 6.33594ZM10.7207 8.82377C10.7226 8.91828 10.6862 9.0094 10.6201 9.07561L8.48236 11.2777C8.41969 11.3425 8.33425 11.3789 8.2451 11.3789C8.15596 11.3789 8.07052 11.3425 8.00785 11.2777L5.86973 9.07561C5.80368 9.00935 5.76735 8.9182 5.76931 8.82369C5.77126 8.72918 5.81134 8.63968 5.88008 8.57633C7.24533 7.39764 9.24487 7.39764 10.6101 8.57633C10.6788 8.63973 10.7188 8.72926 10.7207 8.82377Z"
+              fill="black"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="13"
+            viewBox="0 0 25 13"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0 4C0 1.79086 1.79086 0 4 0H18C20.2091 0 22 1.79086 22 4V9C22 11.2091 20.2091 13 18 13H4C1.79086 13 0 11.2091 0 9V4Z"
+              fill="#B2B2B2"
+            />
+            <path
+              d="M0 4C0 1.79086 1.79086 0 4 0H16V13H4C1.79086 13 0 11.2091 0 9V4Z"
+              fill="black"
+            />
+            <path
+              d="M23 4.80859V8.86662C23.8164 8.52293 24.3473 7.7234 24.3473 6.83761C24.3473 5.95181 23.8164 5.15228 23 4.80859Z"
+              fill="#B2B2B2"
+            />
+            <path
+              d="M5.1084 10L8.11133 4.25293V4.16504H4.55664V2.94922H9.5957V4.17969L6.65137 10H5.1084Z"
+              fill="white"
+            />
+            <path
+              d="M13.5961 10.1807C13.0851 10.1807 12.6293 10.0716 12.2289 9.85352C11.8318 9.63542 11.5128 9.31966 11.2719 8.90625C10.878 8.30078 10.6811 7.50814 10.6811 6.52832C10.6811 5.3597 10.9415 4.44173 11.4623 3.77441C11.9832 3.1071 12.7026 2.77344 13.6205 2.77344C14.2911 2.77344 14.8624 2.9541 15.3344 3.31543C15.8097 3.67676 16.0978 4.15202 16.1987 4.74121H14.7387C14.6704 4.51009 14.5336 4.32617 14.3286 4.18945C14.1267 4.05273 13.8875 3.98438 13.6108 3.98438C13.129 3.98438 12.7498 4.20085 12.4731 4.63379C12.1996 5.06348 12.0711 5.64453 12.0873 6.37695H12.1752C12.3347 6.04492 12.5707 5.78939 12.8832 5.61035C13.199 5.42806 13.562 5.33691 13.9721 5.33691C14.6394 5.33691 15.1928 5.55827 15.6323 6.00098C16.0717 6.44368 16.2914 7.00195 16.2914 7.67578C16.2914 8.4082 16.0392 9.00879 15.5346 9.47754C15.0301 9.94629 14.3839 10.1807 13.5961 10.1807ZM12.6733 8.6084C12.9174 8.84928 13.2202 8.96973 13.5815 8.96973C13.9428 8.96973 14.2455 8.85091 14.4897 8.61328C14.7371 8.3724 14.8608 8.07454 14.8608 7.71973C14.8608 7.36165 14.7403 7.06543 14.4995 6.83105C14.2586 6.59342 13.9542 6.47461 13.5864 6.47461C13.2185 6.47461 12.9125 6.5918 12.6684 6.82617C12.4275 7.06055 12.3071 7.35352 12.3071 7.70508C12.3071 8.06315 12.4291 8.36426 12.6733 8.6084Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+      </div>
+      <div id="login">
+        <div class="img-logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="flex">
+          <div class="input">
+            <p>Telefon nömrəsi</p>
+            <input type="text" />
+          </div>
+          <div class="input">
+            <p>Şifrə</p>
+            <input type="password" id="password" />
+            <img id="eye" src="./images/eye-slash.png" />
+          </div>
+          <div class="check-box">
+            <div class="check">
+              <input type="checkbox" />
+              <label>Yadda saxla</label>
+            </div>
+            <p>Şifrəni unutmusunuz?</p>
+          </div>
+          <button class="btn">Daxil ol</button>
+          <button class="btn white" id="sign-up">Qeydiyyat</button>
+        </div>
+      </div>
+
+      <div id="sign-up-1">
+        <div class="img-logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="flex">
+          <div>
+            <h3>Qeydiyyat</h3>
+          </div>
+          <div class="input">
+            <p>Fin daxil edin</p>
+            <input type="text" />
+          </div>
+          <div class="input">
+            <p>Phone Number</p>
+            <input type="text" />
+          </div>
+          <div class="check-box">
+            <div class="check">
+              <input type="checkbox" />
+              <label
+                ><h5>
+                  Məlumatlarımın
+                  <span class="blue">ASAN Finansdan</span> çəkilməsinə razıyam
+                </h5></label
+              >
+            </div>
+          </div>
+          <button class="btn" id="next-1">Növbəti</button>
+        </div>
+      </div>
+
+      <div class="flex" id="sign-up-2">
+        <div class="sign-2-head">
+          <h3>Qeydiyyat</h3>
+          <img src="./images/photo.png" />
+        </div>
+        <div class="inputs">
+          <div class="input">
+            <p>Ad</p>
+            <input type="text" />
+          </div>
+          <div class="input">
+            <p>Soyad</p>
+            <input type="text" />
+          </div>
+          <div class="input">
+            <p>Ata adı</p>
+            <input type="text" />
+          </div>
+          <div class="input">
+            <p>Fin</p>
+            <input type="text" />
+          </div>
+          <div class="input">
+            <p>Telefon nömrəsi</p>
+            <input type="text" />
+          </div>
+          <div class="input">
+            <p>Doğum tarixi</p>
+            <input type="text" />
+          </div>
+          <div class="input">
+            <p>Qeydiyyat ünvanı</p>
+            <input type="text" />
+          </div>
+        </div>
+        <button class="btn" id="final">Yekunlaşdır</button>
+      </div>
+
+      <div class="code-box" id="code-box">
+        <div>
+          <img src="./images/Icon.svg" />
+        </div>
+        <div>
+          <h3>Təsdiq kodu</h3>
+          <p>
+            Zəhmət olmasa <span>+99555 299 21 19</span> nömərsinə gələn OTP kodu
+            daxil edin
+          </p>
+        </div>
+        <div class="input-codes">
+          <input class="input-code" type="text" />
+          <input class="input-code" type="text" />
+          <input class="input-code" type="text" />
+          <input class="input-code" type="text" />
+        </div>
+        <p class="code">Kodu yenidən göndər <span id="timer">1:00</span></p>
+        <button class="btn btn-blue" id="submit">Təsdiqlə</button>
+        <div class="keyboard">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>.</div>
+          <div>0</div>
+          <div><img src="./images/Outline.png" /></div>
+        </div>
+      </div>
+
+      <div class="success-box" id="success-box">
+        <img src="./images/icon.png" />
+        <div>
+          <h3>Hesabınız uğurla yaradıldı!</h3>
+          <p>
+            <span> Beh.az </span>-dan istifadə etməkdən həzz alın! Gəlin
+            başlayaq!
+          </p>
+        </div>
+        <button class="btn" id="login-btn">Daxil ol</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
