@@ -16,10 +16,10 @@ body {
   p {
     position: absolute;
     font-size: 11px;
-    top: -9px;
+    top: -6px;
     left: 10px;
     background-color: #fff;
-    padding: 3px;
+    padding: 0 3px;
   }
   input {
     width: 100%;
@@ -144,7 +144,7 @@ body {
   gap: 10px;
 }
 .code-box {
-  margin-top: 20px;
+  margin-top: 21px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -188,7 +188,7 @@ body {
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
       &:focus {
-        border: 1px solid #fff;
+        border: 1px solid red;
       }
     }
   }
@@ -250,4 +250,10 @@ body {
 }
 #success-box {
   display: none;
+}
+#code-text {
+  cursor: pointer;
+}
+svg path{
+  width: 23%;
 }
