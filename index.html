@@ -106,7 +106,6 @@
           <button class="btn white" id="sign-up">Qeydiyyat</button>
         </div>
       </div>
-
       <div id="sign-up-1">
         <div class="img-logo">
           <img src="./images/logo.png" alt="" />
@@ -137,7 +136,6 @@
           <button class="btn" id="next-1">Növbəti</button>
         </div>
       </div>
-
       <div class="flex" id="sign-up-2">
         <div class="sign-2-head">
           <h3>Qeydiyyat</h3>
@@ -175,7 +173,6 @@
         </div>
         <button class="btn" id="final">Yekunlaşdır</button>
       </div>
-
       <div class="code-box" id="code-box">
         <div>
           <img src="./images/Icon.svg" />
@@ -188,29 +185,28 @@
           </p>
         </div>
         <div class="input-codes">
-          <input class="input-code" type="text" />
-          <input class="input-code" type="text" />
-          <input class="input-code" type="text" />
-          <input class="input-code" type="text" />
+          <input class="input-code" id="input1" maxlength="1" type="text" value=""/>
+          <input class="input-code" id="input2" maxlength="1" type="text" value=""/>
+          <input class="input-code" id="input3" maxlength="1" type="text" value=""/>
+          <input class="input-code" id="input4" maxlength="1" type="text" value=""/>
         </div>
-        <p class="code">Kodu yenidən göndər <span id="timer">1:00</span></p>
+        <p class="code" id="code-text">Kodu yenidən göndər <span id="timer">0:20</span></p>
         <button class="btn btn-blue" id="submit">Təsdiqlə</button>
         <div class="keyboard">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>
+          <div class="keys">1</div>
+          <div class="keys">2</div>
+          <div class="keys">3</div>
+          <div class="keys">4</div>
+          <div class="keys">5</div>
+          <div class="keys">6</div>
+          <div class="keys">7</div>
+          <div class="keys">8</div>
+          <div class="keys">9</div>
           <div>.</div>
-          <div>0</div>
-          <div><img src="./images/Outline.png" /></div>
+          <div class="keys">0</div>
+          <div id="delete"><img src="./images/Outline.png" /></div>
         </div>
       </div>
-
       <div class="success-box" id="success-box">
         <img src="./images/icon.png" />
         <div>
@@ -223,7 +219,6 @@
         <button class="btn" id="login-btn">Daxil ol</button>
       </div>
     </div>
-
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script
