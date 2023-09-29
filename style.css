@@ -8,7 +8,6 @@
   box-sizing: border-box;
   font-family: inter;
 }
-
 body {
   background-color: #f5f5f5;
 }
@@ -19,10 +18,10 @@ body {
 .input p {
   position: absolute;
   font-size: 11px;
-  top: -9px;
+  top: -6px;
   left: 10px;
   background-color: #fff;
-  padding: 3px;
+  padding: 0 3px;
 }
 .input input {
   width: 100%;
@@ -41,7 +40,6 @@ body {
   top: 12px;
   cursor: pointer;
 }
-
 .btn {
   width: 100%;
   color: #fff;
@@ -59,14 +57,12 @@ body {
   font-size: 13px;
   cursor: pointer;
 }
-
 .white {
   color: black;
   background-color: #fff;
   border: 1px solid #d9d9d9;
   box-shadow: none;
 }
-
 .btn-blue {
   color: #2869fe;
   background-color: #fff;
@@ -125,7 +121,6 @@ body {
 .container .flex .check-box .blue {
   color: #0085ff;
 }
-
 #sign-up-1 {
   display: none;
 }
@@ -133,7 +128,6 @@ body {
 #sign-up-2 {
   display: none;
 }
-
 .sign-2-head {
   margin-top: 25px;
   display: flex;
@@ -144,15 +138,13 @@ body {
 .sign-2-head img {
   width: 60px;
 }
-
 .inputs {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
 .code-box {
-  margin-top: 20px;
+  margin-top: 21px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -199,7 +191,7 @@ body {
   -o-border-radius: 10px;
 }
 .code-box .input-codes .input-code:focus {
-  border: 1px solid #fff;
+  border: 1px solid red;
 }
 .code-box .keyboard {
   border-top-right-radius: 20px;
@@ -225,11 +217,9 @@ body {
 .code-box .keyboard img {
   width: 23px;
 }
-
 .code-box {
   display: none;
 }
-
 .success-box {
   display: flex;
   flex-direction: column;
@@ -258,7 +248,13 @@ body {
 .success-box .btn {
   margin-top: 20px;
 }
-
 #success-box {
   display: none;
+}
+
+#code-text {
+  cursor: pointer;
+}
+svg path {
+  width: 23%;
 }/*# sourceMappingURL=style.css.map */
